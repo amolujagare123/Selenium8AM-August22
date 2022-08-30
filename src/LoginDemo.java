@@ -21,10 +21,13 @@ public class LoginDemo {
         WebElement txtPassword = driver.findElement(By.id("login-password"));
         txtPassword.sendKeys("admin");
 
+        System.out.println(txtPassword);
+
         WebElement btnLogin = driver.findElement(By.name("submit"));
         btnLogin.click();
 
-        driver.findElement(By.linkText("Add Customer")).click();
+        //driver.findElement(By.linkText("Add Customer")).click();
+        driver.findElement(By.partialLinkText("Add Cu")).click();
 
         driver.findElement(By.name("name")).sendKeys("Ananta");
 
