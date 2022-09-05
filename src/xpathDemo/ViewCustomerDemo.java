@@ -1,10 +1,12 @@
+package xpathDemo;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class LoginDemoXpath {
+public class ViewCustomerDemo {
 
     public static void main(String[] args) throws InterruptedException {
 
@@ -25,18 +27,15 @@ public class LoginDemoXpath {
         WebElement btnLogin = driver.findElement(By.xpath("//input[@type='submit']"));
         btnLogin.click();
 
-        //driver.findElement(By.linkText("Add Customer")).click();
+
         driver.findElement(By.xpath("//a[@href='add_customer.php']")).click();
+        driver.findElement(By.xpath("//a[normalize-space()='View Customers']")).click();
 
-        driver.findElement(By.xpath("//input[@name='name']")).sendKeys("Ananta");
 
-        driver.findElement(By.xpath("//*[@name='address']")).sendKeys("xyz");
+        String name = "Sunny";
 
-        driver.findElement(By.xpath("//*[@name='contact1']")).sendKeys("898989");
+        driver.findElement(By.xpath("//tr[td[text()='"+name+"']]//input")).click();
 
-        driver.findElement(By.xpath("//*[@name='contact2']")).sendKeys("434343");
-
-        driver.findElement(By.xpath("//*[@name='Submit']")).click();
 
     }
 }
