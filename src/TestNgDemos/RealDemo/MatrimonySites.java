@@ -25,7 +25,7 @@ public class MatrimonySites {
         driver.close();
     }
 
-    @Test
+    @Test (enabled = false)
     public void shaadi() {
         driver.get("http://shaadi.com");
     }
