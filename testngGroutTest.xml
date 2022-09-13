@@ -1,0 +1,23 @@
+<suite name="Project Group test">
+
+    <groups>
+        <run>
+            <exclude name="validation"/>
+        </run>
+    </groups>
+
+
+    <test name="First module">
+        <classes>
+            <class name="TestNgDemos.Demo2.ClassTwo"/>
+            <class name="TestNgDemos.Demo2.ClassOne"/>
+        </classes>
+    </test>
+
+    <test name="second module">
+        <classes>
+            <class name="TestNgDemos.Demo2.ClassThree"/>
+        </classes>
+    </test>
+
+</suite>

@@ -9,12 +9,13 @@ public class ClassThree {
     {
         System.out.println("classThreeTest1");
     }
-    @Test
+
+    @Test (groups = {"email","validation"})
     public void classThreeTest2()
     {
         System.out.println("classThreeTest2");
     }
-    @Test
+    @Test (groups = {"phone","validation"})
     public void classThreeTest3()
     {
         System.out.println("classThreeTest3");
