@@ -1,8 +1,10 @@
 package TestNgDemos.RealDemo;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -40,7 +42,10 @@ public class SocialSites {
     @Test (priority = 3)
     public void twitter()
     {
-        driver.get("http://twitter.com");
+        driver.get("http://gmail.com");
+        Assert.assertEquals(driver.getTitle(),
+                "Twitter. It’s what’s happening / Twitter"
+        ,"This is not a twitter page");
     }
 
     @Test (priority = 4)

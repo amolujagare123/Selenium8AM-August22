@@ -1,0 +1,25 @@
+<suite name = "All sites">
+
+    <!--<listeners>
+        <listener class-name="org.testng.reporters.EmailableReporter2" />
+    </listeners>-->
+
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    </listeners>
+
+    <test name="Interaction sites">
+        <classes>
+            <class name = "TestNgDemos.RealDemo.SocialSites"/>
+            <class name = "TestNgDemos.RealDemo.MatrimonySites"/>
+        </classes>
+    </test>
+
+    <test name="Job sites">
+        <classes>
+            <class name = "TestNgDemos.RealDemo.JobSites"/>
+        </classes>
+    </test>
+
+</suite>
