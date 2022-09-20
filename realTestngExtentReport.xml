@@ -1,12 +1,7 @@
 <suite name = "All sites">
 
-<!--   <listeners>
-        <listener class-name="org.testng.reporters.EmailableReporter2" />
-    </listeners>-->
-
     <listeners>
-        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
-        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+        <listener class-name="ExtentReport.utility.ExtentReportsListeners"/>
     </listeners>
 
     <test name="Interaction sites">

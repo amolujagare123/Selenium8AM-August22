@@ -23,11 +23,11 @@ public class MyListener implements ITestListener {
         System.out.println("onTestSkipped");
     }
 
-    public void onStart(ITestContext context) { // test tag
+    public void onStart(ITestContext context) { // before test tag
         System.out.println("onStart");
     }
 
-    public void onFinish(ITestContext context) {
+    public void onFinish(ITestContext context) {  // after test tag
         System.out.println("onFinish");
     }
 
